@@ -32,13 +32,20 @@ const RegistroConductora = () => {
 
   };
 
+  const handleAbrirFormulario = () => {
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSf3JKCf2_R_wIO8h5tAYsyO8sFYspXBt-dqlarDw4f5nu84AQ/viewform',
+      '_blank'
+    );
+  };
+
   return (
     <div className="cond-registro">
       <form className="cond-formRegistro"onSubmit={handleRegistro}>
       <h1 className="title">Registro de Conductora</h1><br/><br/>
       <span>Completa el siguiente formulario para ser parte de nuestro grupo de conductoras.</span><br/><br/>
 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3JKCf2_R_wIO8h5tAYsyO8sFYspXBt-dqlarDw4f5nu84AQ/viewform">
+      <a href="#" onClick={handleAbrirFormulario}>
         Click aquí para ir al formulario.
       </a>
 
