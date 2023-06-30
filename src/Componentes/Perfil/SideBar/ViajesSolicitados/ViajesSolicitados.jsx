@@ -6,6 +6,9 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { UilMapPinAlt, UilLocationPinAlt, UilMap, UilClock, UilDollarSignAlt} from '@iconscout/react-unicons'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { io } from "socket.io-client"
 
 
 export default function ViajesSolicitados() {
@@ -16,8 +19,12 @@ export default function ViajesSolicitados() {
     console.log(solicitudes)
 
     useEffect(() => {
-          dispatch(obtenerViajesEnEspera());
-      }, [dispatch]);
+      dispatch(obtenerViajesEnEspera());
+//       const socket = io("http://localhost:3001", {
+//   transports: ["websocket"],
+// });
+      
+    }, [dispatch]);
 
       function generateRandomCode() {
         const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -67,6 +74,7 @@ export default function ViajesSolicitados() {
   return (
     <div className="containerMisViajes">
     <SideBar />
+    <ToastContainer position="top-right" autoClose={10000} hideProgressBar={true} />
     <div className='rightMisViajes'>
       <h2>Solicitudes</h2>
       {!solicitudes.length ? 

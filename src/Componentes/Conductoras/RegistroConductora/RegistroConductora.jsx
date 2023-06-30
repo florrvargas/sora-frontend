@@ -8,7 +8,7 @@ const RegistroConductora = () => {
   const dispatch = useDispatch();
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
-  const [contrasena, setContraseña] = useState('');
+  const [contraseña, setContraseña] = useState('');
   const [edad, setEdad] = useState('');
   const [direccion, setDireccion] = useState('');
   const [numeroCuenta, setNumeroCuenta] = useState('');
@@ -26,7 +26,7 @@ const RegistroConductora = () => {
   const handleRegistro = (e) => {
     e.preventDefault();
 
-    const payload = { nombre, correo, contrasena, edad, direccion, numeroCuenta,tipoDeViaje, vehiculoAsegurado, foto, carnetidentidad, hojaDeVida, antecedentes, documentosVehiculo, licenciaConducir, imagenSeguro };
+    const payload = { nombre, correo, contraseña, edad, direccion, numeroCuenta,tipoDeViaje, vehiculoAsegurado, foto, carnetidentidad, hojaDeVida, antecedentes, documentosVehiculo, licenciaConducir, imagenSeguro };
     dispatch(registerConductora(payload));
     // navigate("/perfil/viajes");
 
@@ -49,8 +49,8 @@ const RegistroConductora = () => {
         <label htmlFor="correo">Correo</label>
         <input type="email" id="correo" value={correo} onChange={(e) => setCorreo(e.target.value)} required />
 
-        <label htmlFor="contrasena">Contraseña</label>
-        <input type="password" id="contrasena" value={contrasena} onChange={(e) => setContraseña(e.target.value)} required />
+        <label htmlFor="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" value={contraseña} onChange={(e) => setContraseña(e.target.value)} required />
 
         <label htmlFor="edad">Edad</label>
         <input type="number" id="edad" value={edad} onChange={(e) => setEdad(e.target.value)} required />

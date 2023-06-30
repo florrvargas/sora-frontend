@@ -5,8 +5,23 @@ import { registroUsuario } from '../../redux/actions'
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import jwtDecode from 'jwt-decode';
+import {getToken, onMessage} from "firebase/messaging";
+import {messaging} from "../../firebase";
 
 export default function Registro() {
+
+  const generarToken = async () => {
+    const token = await getToken(messaging,{
+      vapidKey: "BIxo6nMId-FZAeg9u-3A7hwOl2R9Gi0y_QMeniRoYg_QvpWI_65rjrtfe8wrJ7voxGMEAQ801DC4bzM7jqnGNHo"
+    }).catch(error => console.log(error));
+    if(token) {
+      setToken(token);
+    }
+  }
+
+  useEffect(() => {
+    generarToken()
+    },[])
 
   const dispatch = useDispatch();
   const [nombre, setNombre] = useState('');
@@ -17,6 +32,7 @@ export default function Registro() {
   const [dni, setDni] = useState('');
   const [fotoDni, setFotoDni] = useState(null);
   const [genero, setGenero] = useState('');
+  const [token, setToken] = useState('');
 
   const navigate = useNavigate();
 
@@ -33,6 +49,7 @@ export default function Registro() {
     return password === confirmPassword;
   };
 
+
   const handleRegister = () => {
     try {
       if (!isEmailValid(correo)) {
@@ -40,11 +57,11 @@ export default function Registro() {
         return;
       }
       if (!isPasswordValid(contrasena)) {
-        alert("La contrasena debe tener al menos 6 caracteres.");
+        alert("La contraseña debe tener al menos 6 caracteres.");
         return;
       }
       if (!isConfirmPasswordValid(contrasena, confirmarContraseña)) {
-        alert("La contrasena y la confirmación de contrasena no coinciden.");
+        alert("La contraseña y la confirmación de contraseña no coinciden.");
         return;
       }
       if (dni === '') {
@@ -59,8 +76,9 @@ export default function Registro() {
         alert('Por favor, selecciona tu género.');
         return;
       }
+
+      const payload = { nombre, correo, contrasena, dni, fotoDni, genero, token };
   
-      const payload = { nombre, correo, contrasena, dni, fotoDni, genero };
       dispatch(registroUsuario(payload));
       navigate("/perfil/viajes");
     } catch (error) {
@@ -106,7 +124,7 @@ export default function Registro() {
               <input
                 required
                 type={showPassword ? 'text' : 'password'}
-                name="contrasena"
+                name="contraseña"
                 onChange={(e) => setContraseña(e.target.value)}
                 value={contrasena}
                 placeholder="Contraseña"
@@ -131,7 +149,7 @@ export default function Registro() {
                 name="confirmarContraseña"
                 onChange={(e) => setConfirmarContraseña(e.target.value)}
                 value={confirmarContraseña}
-                placeholder="Confirmar contrasena"
+                placeholder="Confirmar contraseña"
                 className="input"
               />
               <button
@@ -151,9 +169,9 @@ export default function Registro() {
         <label>
           <input  
             required
-            type="text"
+            type="number"
             name="dni"
-            onChange={(e) => setDni(e.target.value)}
+            onChange={(e) => setDni(parseInt(e.target.value))}
             value={dni}
             placeholder="DNI/RUT"
             className="inputt"

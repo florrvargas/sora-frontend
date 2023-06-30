@@ -28,7 +28,7 @@ export default function Footer() {
 
       </div>
 
-      <div className="descargaAppFooter">
+      {/* <div className="descargaAppFooter">
       <p>Descarga nuestra App Móvil</p>
         <div className="info">
           <Android className="iconFooter" size='1.5rem' color='#20BA2F'/>
@@ -38,7 +38,7 @@ export default function Footer() {
           <Apple className="iconFooter" size='1.5rem' color='black'/>
           <p>Descarga la App para iOS</p>
           </div>
-        </div>
+        </div> */}
       
 
       <div className="serviciosFooter">
@@ -52,7 +52,7 @@ export default function Footer() {
 
       <div className="ayudaFooter">
         <a href="/Conductoras"><p>Vuélvete conductora</p></a>
-        <a href="/Ayuda"><p>Ayuda</p></a>
+        {/* <a href="/Ayuda"><p>Ayuda</p></a> */}
         <a href="/QuienesSomos"><p>QuienesSomos</p></a>
       </div>
     </div>

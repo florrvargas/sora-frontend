@@ -4,7 +4,6 @@ export function registroUsuario(payload) {
 
   return async function (dispatch) {
     try {
-
       const { fotoDni, ...restoPayload } = payload
       console.log(payload)
 
@@ -17,7 +16,7 @@ export function registroUsuario(payload) {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
-        params: {
+        body: {
           fotoDni: formData,
         },
       });

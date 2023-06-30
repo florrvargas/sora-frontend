@@ -1,4 +1,6 @@
 import React from 'react';
+
+
 import './Home.css'
 import Cards from '../Servicios/Cards';
 import soraWoman from '../../assets/SoraWoman.png'
@@ -8,6 +10,8 @@ import inicio from '../../assets/Inicio.png'
 import inicioPortada from '../../assets/InicioPortada.jpg'
 import Viajes from '../Perfil/SideBar/Viajes/Viajes';
 import Rutas from './Rutas';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 
 export default function Home() {
   return (
@@ -18,8 +22,8 @@ export default function Home() {
     ------------------------------------------------------- */}
       <div className="inicio">
         <div className="inicioRight">
-        <h1 id='h1'>Planifica tu viaje y muévete con Sora</h1>
-        <span>Sora se encargará de que llegues tranquila y feliz a tu destino</span>
+        <h1 id='h1'>Planifica tu viaje y muévete con Sora.</h1>
+        <span>Sora se encargará de que llegues tranquila y feliz a tu destino.</span>
         <a href="/Conductoras">
         <button className='button'>Vuélvete conductora </button></a>
         </div>
@@ -60,11 +64,12 @@ export default function Home() {
         <div className="inicioRight">
           <h1>¿Por qué moverte con SORA?</h1>
           <div className="razones">
-          <span> ● Nos importa y nos preocupa que MUJERES, MADRES y AMIG@S de la comunidad LGBTQIA puedan movilizarse sin sentir miedo a ser violentad@s y/o asaltad@s.</span>
-          <span> ● Somos una startup de movilidad femenina ideada por MUJERES, para MUJERES.</span>
-          <span> ● Donde SORA esté, estaremos haciendo alianzas y donando dinero a diversas ONG'S que persigamos los mismos propósitos.</span>
+          <span> ● Somos 100% movilidad entre mujeres.</span>
+          <span> ● Las tasas de acoso en lugares públicos y privados van en aumento y las mujeres queremos movernos tranquilas.
+          </span>
+          <span> ● Cada vez que viajas con Sora, estás aportando en el empoderamiento económico de otra mujer.</span>
           </div>
-          <a href="/QuienesSomos">
+          <a href="/quienes-somos">
           <button className='button'>Mas información sobre SORA </button>
           </a>
         </div>

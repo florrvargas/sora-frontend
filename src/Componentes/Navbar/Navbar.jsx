@@ -18,7 +18,7 @@ export default function Navbar() {
         </a>
         <ul className={`n-list ${isMenuOpen ? 'open' : ''}`}>
           <li>
-            <a href="/quienes-somos">Quienes Somos</a>
+            <a href="/quienes-somos">Quiénes Somos</a>
           </li>
           <li>
             <a href="/servicios">Servicios</a>

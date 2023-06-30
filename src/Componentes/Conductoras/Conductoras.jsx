@@ -12,7 +12,7 @@ export default function Conductoras() {
 {/*---------------------- INTRO ----------------------*/}    
         <div className="introCond">
             <div className="leftCond">
-                <h1>¿Quieres conducir con nosotras?</h1>
+                <h1>Únete a nuestro equipo de conductoras.</h1>
                 <a href="/registro-conductora">
                 <button className='button'>Regístrate para conducir </button>
                 </a>
@@ -29,10 +29,11 @@ export default function Conductoras() {
             <div className="infoReq">
                 <div className="leftReq">
                     <h1>¿Qué necesitas para ser parte de Sora?</h1><br/>
-                    <span> ● Ser mayor de 18 años.</span>
-                    <span> ● Puntualidad.</span>
-                    <span> ● Vehículo propio.</span>
-                    <span> ● Responder un formulario para saber si cumples con los requisitos.</span>
+                    <span> ● Ser mayor de 21 años.</span>
+                    <span> ● Licencia clase B (con dos años de antiguedad) o clase A.</span>
+                    <span> ● Disponer de un auto con los papeles al día a partir del año 2008.</span>
+                    <span> ● Estar dispuesta en un tiempo cercano a obtener tu licencia clase A.</span>
+                    <span> ● Amabilidad, Puntualidad, Simpatía y excelente Disposición</span>
                 </div>
                 <div className="rigthReq">
                         <img src={auto} alt="" width='180rem'/>
@@ -71,10 +72,11 @@ export default function Conductoras() {
             <div className="infoReq">
                 <div className="leftReq">
                     <h1>¿Qué necesitas para ser parte de Sora?</h1><br/>
-                    <span> ● Ser mayor de 18 años.</span>
-                    <span> ● Puntualidad.</span>
-                    <span> ● Vehículo propio.</span>
-                    <span> ● Responder un formulario para saber si cumples con los requisitos.</span>
+                    <span> ● Ser mayor de 21 años.</span>
+                    <span> ● Licencia clase B (con dos años de antiguedad) o clase A.</span>
+                    <span> ● Disponer de un auto con los papeles al día a partir del año 2008.</span>
+                    <span> ● Estar dispuesta en un tiempo cercano a obtener tu licencia clase A.</span>
+                    <span> ● Amabilidad, Puntualidad, Simpatía y excelente Disposición</span>
                 </div>
                 <div className="rigthReq">
                         <img src={auto} alt="" width='180rem'/>

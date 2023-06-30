@@ -3,6 +3,12 @@ import './QuienesSomos.css';
 import nosotras from '../../assets/Nosotras.png'
 import movete from '../../assets/MoveteSeguraFeliz.png'
 import inseguras from '../../assets/55.png'
+import inicio from '../../assets/Inicio.png'
+import soraWoman from '../../assets/SoraWoman.png'
+import soraPet from '../../assets/SoraPet.png'
+import soraSenior from '../../assets/SoraSenior.png'
+import Cards from '../Servicios/Cards';
+
 
 export default function QuienesSomos() {
   return (
@@ -12,7 +18,10 @@ export default function QuienesSomos() {
 
       <div className="inicioNos">
         <div className="leftNos">
-          <h1>Somos una startup de movilidad femenina ideada por mujeres, para mujeres.</h1>
+          <h1>Bienvenida a Sora.</h1>
+          <h1>Somos una empresa  
+          de traslado entre mujeres.
+          </h1>
         </div>
         <div className="rightNos">
           <img src={nosotras} alt="" width='500rem' />
@@ -26,22 +35,169 @@ export default function QuienesSomos() {
           <img src={movete} alt="" width='400rem' />
         </div>
         <div className="leftNos">
-          <span>Sora nace para que mujeres, madres y/o doglovers puedan trasladarse seguras y felices.</span>
-          <span>En Sora, mujeres trasladan a mujeres.
-          Porque queremos que llegues segura, tu bienestar SÍ nos importa.</span>
+          <h1>Con Sora, nos movemos tranquilas, seguras y felices.</h1>
+          <span></span>
         </div>
       </div>
 
       <div className="inicioNos">
         <div className="leftNos">
-          <span>Es preocupante los niveles de inseguridad que vivimos las mujeres cuando queremos tomar un taxi.
-          </span>
-          <span>Queremos viajar tranquilas, sin sentir miedo a que alguien nos puede acosar, violentar y/o abusar.</span>
-          <span>Estamos aquí porque te queremos libre y feliz.</span>
+          <h1>Sora es 100% movilidad entre mujeres.
+          </h1>
+          <span></span>
+          <span></span>
         </div>
         <div className="rightNos">
           <img src={inseguras} alt="" width='400rem' />
         </div>
+      </div>
+
+      {/* -------------------------------------------------------
+    ---------------------- WHY SORA ----------------------
+    ------------------------------------------------------- */}
+      <div className="inicioNos">
+        <img src={inicio} alt="" width='50%' />
+        <div className="inicioRight">
+          <h1>¿Por qué moverte con SORA?</h1>
+          <div className="razones">
+          <span> ● Somos 100% movilidad entre mujeres.</span>
+          <span> ● Las tasas de acoso en lugares públicos y privados van en aumento y las mujeres queremos movernos tranquilas.
+          </span>
+          <span> ● Cada vez que viajas con Sora, estás aportando en el empoderamiento económico de otra mujer.</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="inicioNos">
+        <h1>Servicios</h1>
+      </div>
+      <div className="inicioNos">
+        <div className="cardsHome">
+          <a href="/Servicios">
+          <Cards 
+            nombre='SoraWoman' 
+            imagen={soraWoman} 
+            info='Transporte exclusivo para mujeres.'/>
+          </a>
+          <a href="/Servicios">
+          <Cards 
+            nombre='SoraPet' 
+            imagen={soraPet} 
+            info='Transporte exclusivo para mujeres y animalovers.'/>
+          </a>
+          <a href="/Servicios">
+          <Cards 
+            nombre='SoraSenior' 
+            imagen={soraSenior} 
+            info='Transporte exclusivo para mujeres mayores.'/>
+          </a>
+        </div>
+      </div>
+
+      <div className="inicioNos">
+        <a href="/conductoras">
+          <button className='buttonConduct'> QUIERO SER CONDUCTORA</button>
+          </a>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*-------------------- Mobile --------------------*/}  
+      <div className="inicioNos2">
+        <div className="leftNos">
+          <h1>Bienvenida a Sora.</h1>
+          <h1>Somos una empresa  
+          de traslado entre mujeres.
+          </h1>
+        </div><br/>
+        <div className="rightNos">
+          <img src={nosotras} alt="" width='500rem' />
+        </div>
+      </div>
+
+      <div className="inicioNos2">
+        <div className="leftNos">
+          <h1>Con Sora, nos movemos tranquilas, seguras y felices.</h1>
+          {/* <span></span> */}
+        </div><br/>
+        <div className="rightNos">
+          <img src={movete} alt="" width='400rem' />
+        </div>
+      </div>
+
+      <div className="inicioNos2">
+        <div className="leftNos">
+          <h1>Sora es 100% movilidad entre mujeres.
+          </h1>
+          {/* <span></span>
+          <span></span> */}
+        </div><br/>
+        <div className="rightNos">
+          <img src={inseguras} alt="" width='400rem' />
+        </div>
+      </div>
+
+      <div className="inicioNos2">
+        
+        <div className="inicioRight">
+          <h1>¿Por qué moverte con SORA?</h1>
+          <div className="razones">
+          <span> ● Somos 100% movilidad entre mujeres.</span>
+          <span> ● Las tasas de acoso en lugares públicos y privados van en aumento y las mujeres queremos movernos tranquilas.
+          </span>
+          <span> ● Cada vez que viajas con Sora, estás aportando en el empoderamiento económico de otra mujer.</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="inicioNos2">
+      <h1>Servicios</h1>
+      </div>
+      <div className="inicioNos2">
+
+      <div className="cardsHome">
+        <a href="/Servicios">
+        <Cards 
+          nombre='SoraWoman' 
+          imagen={soraWoman} 
+          info='Transporte exclusivo para mujeres.'/>
+        </a>
+        <a href="/Servicios">
+        <Cards 
+          nombre='SoraPet' 
+          imagen={soraPet} 
+          info='Transporte exclusivo para mujeres y animalovers.'/>
+        </a>
+        <a href="/Servicios">
+        <Cards 
+          nombre='SoraSenior' 
+          imagen={soraSenior} 
+          info='Transporte exclusivo para mujeres mayores.'/>
+        </a>
+      </div>
+      </div>
+      <div className="inicioNos2">
+        <a href="/conductoras">
+          <button className='buttonConduct'> QUIERO SER CONDUCTORA</button>
+          </a>
       </div>
 
 

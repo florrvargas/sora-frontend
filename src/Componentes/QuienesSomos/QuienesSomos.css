@@ -6,37 +6,71 @@
     margin: 3rem;
     width: 90%;
     height: auto;
+    gap: 5rem;
+}
+.containerNosotras .whySora{
+    width: 100%;
 }
 
 .inicioNos{
     display: flex;
     flex-direction: row;
 }
+.inicioNos2,
+.inicioNos22{
+    display: none;
+}
+
+.inicioNos h1,
+.inicioNos2 h1{
+    font-size: 40px;
+}
+
 
 .leftNos{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 40rem;
     margin-left: 2rem;
 }
 
 .leftNos h1{
     font-size: 40px;
 }
+.buttonConduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+}
 
 @media screen and (max-width: 768px) {
-    .rightNos img{
-        display: none;
-    }
+  
     .leftNos h1{
         font-size: 30px;
     }
     .leftNos{
-        margin-left: 0rem;
+        margin-left: 10%;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
     }
     .containerNosotras{
         margin: 1rem;
         width: 90%;
-        gap: 2rem;
+        gap: 0rem;
+    }
+    .inicioNos{
+        display: none;
+    }
+    .inicioNos2{
+        display: flex;
+        transform: scale(.8);
+        flex-direction: column;
+    }
+    .buttonConduct{
+        width: 20rem;
     }
 }
