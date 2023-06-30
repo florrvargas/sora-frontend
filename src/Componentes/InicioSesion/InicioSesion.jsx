@@ -127,11 +127,11 @@ export default function InicioSesion() {
 
           <div className='separator'>
             <hr className='line' />
-            <span>O</span>
+            <span></span>
             <hr className='line' />
           </div>
 
-          <a id='google-btn'></a>
+          {/* <a id='google-btn'></a> */}
 
           <p className='signup-link'>
             ¿No tienes una cuenta? <a href='/Registro'>Regístrate</a>
