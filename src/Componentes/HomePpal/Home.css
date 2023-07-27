@@ -107,8 +107,34 @@ margin-top: 4rem;
     justify-content: center;
 }
 
+.noticiasHome{
+    width: 100%;
+    margin-top: 4rem;
+    }
+    
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.cardsNewsHome{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 5rem;
+    margin: 1rem;
+}
+
+.noticiasHome h1{
+    display: flex;
+    justify-content: center;
+}
+
+
 @media screen and (max-width: 768px) {
-    .cardsHome{
+    .cardsHome,
+    .cardsNewsHome{
         gap: 0rem;
         flex-direction: column;
         justify-content: center;

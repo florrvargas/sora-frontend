@@ -1,6 +1,7 @@
 import './App.css'
 import { Route, Routes } from "react-router-dom";
 import Footer from './Componentes/Footer/Footer'
+import Home2 from './Componentes/HomePpal/Home2'
 import Home from './Componentes/HomePpal/Home'
 import Navbar from './Componentes/Navbar/Navbar'
 import Servicios from './Componentes/Servicios/Servicios';
@@ -20,6 +21,7 @@ import DetalleViaje from './Componentes/Perfil/DetalleViaje/DetalleViaje';
 import ViajePendiente from './Componentes/Perfil/ViajePendiente/ViajePendiente';
 import EncuestaFinal from './Componentes/Perfil/EncuestaFinal/EncuestaFinal';
 import RegistroConductora from './Componentes/Conductoras/RegistroConductora/RegistroConductora';
+import Noticias from './Componentes/Noticias/Noticias'
  
 function App() {
   return (
@@ -30,10 +32,12 @@ function App() {
         <Routes>
           <Route exact path="/01" element='' />
           <Route exact path="/" element={<><Navbar/><Home/><Footer/></>} />
+          <Route exact path="/home2" element={<><Navbar/><Home2/><Footer/></>} />
           <Route  path="/quienes-somos" element={<><Navbar/><QuienesSomos/><Footer/></>} />
           <Route  path="/servicios" element={<><Navbar/><Servicios/><Footer/></>} />
           <Route  path="/ayuda" element={<><Navbar/><Ayuda/><Footer/></>} />
           <Route  path="/inicio-sesion" element={<><Navbar/><InicioSesion/><Footer/></>} />
+          <Route  path="/noticias" element={<><Navbar/><Noticias/><Footer/></>} />
           <Route  path="/registro" element={<><Navbar/><Registro/><Footer/></>} />
           <Route  path="/conductoras" element={<><Navbar/><Conductoras/><Footer/></>} />
           <Route  path="/registro-conductora" element={<><Navbar/><RegistroConductora/><Footer/></>} />

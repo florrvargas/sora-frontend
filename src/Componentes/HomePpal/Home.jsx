@@ -10,6 +10,7 @@ import inicio from '../../assets/Inicio.png'
 import inicioPortada from '../../assets/InicioPortada.jpg'
 import Viajes from '../Perfil/SideBar/Viajes/Viajes';
 import Rutas from './Rutas';
+import CardNoticias from '../Noticias/CardNoticias'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 
@@ -74,6 +75,36 @@ export default function Home() {
           </a>
         </div>
       </div>
+
+
+      {/* -------------------------------------------------------
+    ---------------------- NOTICIAS ----------------------
+    ------------------------------------------------------- */}
+      {/* <div className="noticiasHome">
+      <h1> Noticias  </h1>
+
+      <div className="news">
+        <div className="cardsNewsHome">
+          <a href="/Noticias">
+          <CardNoticias 
+            nombre='Titulo noticia' 
+            imagen={soraWoman} 
+            info='Info noticia'/>
+          </a>
+          <a href="/Noticias">
+          <CardNoticias 
+            nombre='Titulo noticia' 
+            imagen={soraWoman} 
+            info='Info noticia'/>
+          </a>
+
+        </div>
+          <a href="/Noticias">
+          <h1>Ver más Noticias</h1>
+          <h1>...</h1>
+          </a>
+      </div>
+      </div> */}
 
     {/* -------------------------------------------------------
     ---------------------- CALCULAR RUTA ----------------------
