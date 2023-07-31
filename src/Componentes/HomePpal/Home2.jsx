@@ -39,21 +39,21 @@ export default function Home() {
       <h1>Conoce nuestros servicios</h1>
       <div className="cardsHome">
         <a href="/Servicios">
-        <Cards 
-          nombre='SoraWoman' 
-          imagen={soraWoman} 
+        <Cards
+          nombre='SoraWoman'
+          imagen={soraWoman}
           info='Transporte exclusivo para mujeres.'/>
         </a>
         <a href="/Servicios">
-        <Cards 
-          nombre='SoraPet' 
-          imagen={soraPet} 
+        <Cards
+          nombre='SoraPet'
+          imagen={soraPet}
           info='Transporte exclusivo para mujeres y animalovers.'/>
         </a>
         <a href="/Servicios">
-        <Cards 
-          nombre='SoraSenior' 
-          imagen={soraSenior} 
+        <Cards
+          nombre='SoraSenior'
+          imagen={soraSenior}
           info='Transporte exclusivo para mujeres mayores.'/>
         </a>
       </div>
@@ -65,7 +65,7 @@ export default function Home() {
       <div className="whySora">
         <img src={inicio} alt="" width='50%' />
         <div className="inicioRight">
-          <h1>¿Por qué moverte con SORA?</h1>
+          <h1 >¿Por qué moverte con SORA?</h1>
           <div className="razones">
           <span> ● Somos 100% movilidad entre mujeres.</span>
           <span> ● Las tasas de acoso en lugares públicos y privados van en aumento y las mujeres queremos movernos tranquilas.
@@ -88,27 +88,27 @@ export default function Home() {
       <div className="news">
         <div className="cardsNewsHome">
           <a href="/noticias">
-          <CardNoticias 
-            nombre='El Mercurio Innovación' 
-            imagen={notaMercurio} 
+          <CardNoticias
+            nombre='El Mercurio Innovación'
+            imagen={notaMercurio}
             info='Nota realizada a la fundadora de SORA.'/>
           </a>
           <a href="/noticias">
-          <CardNoticias 
-            nombre='El Sur' 
-            imagen={notaSur} 
+          <CardNoticias
+            nombre='El Sur'
+            imagen={notaSur}
             info='Nota realizada a Sora.'/>
           </a>
           {/* <a href="/Noticias">
-          <CardNoticias 
-            nombre='Titulo noticia' 
-            imagen={soraWoman} 
+          <CardNoticias
+            nombre='Titulo noticia'
+            imagen={soraWoman}
             info='Info noticia'/>
           </a> */}
         </div>
           <a href="/noticias">
-          <h1>Ver más Noticias</h1>
-          <h1>...</h1>
+          <h2>Ver más Noticias</h2>
+          {/* <h2>...</h2> */}
           </a>
       </div>
       </div>

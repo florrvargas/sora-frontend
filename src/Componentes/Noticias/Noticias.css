@@ -64,8 +64,8 @@
     flex-direction: row;
     align-items: center;
     gap: 4rem;
-    margin-bottom: 5rem; /* Espacio entre cada artículo (ajusta según tus necesidades) */
-    border-bottom: 2px solid #ccc; /* Línea separadora de 1 píxel de grosor en color gris (#ccc) */
+    margin-bottom: 5rem; 
+    border-bottom: 2px solid #ccc; 
     padding-bottom: 5rem;
 }
 
@@ -73,79 +73,16 @@
     display: none;
 }
 
-.leftServ{
+.leftNew,
+.rightNew{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 55%;
-}
-
-.leftRuta{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.leftRuta h3{
-    font-size: 24px;
-    color: var(--purple1);
-}
-
-.ruta{
-    display: flex;
-    flex-direction: column;
-}
-
-.rightServ img{
-    border-radius: 20px;
-}
-   
-@media screen and (max-width: 768px) {
-    /* .containerNoticias{
-        margin: 1rem;
-        width: 90%;
-    }
-
-    .introNoticias img{
-        display: none;
-    }
     
-     .introNoticias h1{
-        font-size: 35px;
-    }
-    
-    .soraNoticias2,
-    .soraNoticia{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: scale(.8);
-    }
-
-    .soraNoticias{
-        display: none;
-    }
-
-    .Noticias{
-        gap: 0rem;
-        margin-top: 4rem;
-        margin-bottom: 2rem;
-        width: 100%;
-    }
-    
-    .Noticias h2{
-        font-size: 30px;
-    }
-
-    .rightServ img{
-        transform: scale(.6);
-    }
-    
-    .leftServ{
-        margin-left: 0rem;
-        width: 100%;
-    } */
 }
 
+
+/* componente CarNoticias */
 
 .cardNew {
     width: 350px;
@@ -201,4 +138,69 @@
     .titleCardNew{
         margin: 0rem;
     }
+
+
+    .containerNoticias{
+        height: auto;
+        margin: 1rem;
+        width: 90%;
+    }
+    .introNoticias h1{
+        top: calc(40%);
+        left: calc(15%);
+        font-size: 35px;
+    }
+
+    .Noticias{
+        gap: 0rem;
+    }
+    
+    .Noticias h1{
+        font-size: 25px;
+    }
+
+
+    .soraNoticias{
+        flex-direction: column;
+        gap: 0rem;
+        padding-bottom: 0rem;
+        width: 80%;
+
+    }
+    .soraNoticias img{
+        width:25rem;
+    }
+    
+    
+    .leftNew,
+    .rightNew{
+        align-items: center;
+      transform: scale(.9);
+      width: 400px;
+      margin-left: 0rem;
+    }
+
+
+    .leftNew h1, span{
+        width: 400px;
+        margin-left: 1rem;
+    }
+    .leftNew h1,
+    .rightNew h1{
+        font-size: 20px;
+    }
+
+
+    .rightNew h1, span{
+        width: 400px;
+        margin-left: 1rem;
+
+        
+    }
+    
+    
+    
+   
+
+    
 }
